@@ -19,7 +19,7 @@
             "minzoom": 6,
             "maxzoom": 6,
             "tiles": [
-                "http://localhost:8000/img/{z}-{x}-{y}-tile.csv.png"
+                "https://mghs15.github.io/tile-dist-from-pmtiles/img/{z}-{x}-{y}-tile.csv.png"
             ],
             "attribution": "地理院タイル目録（地理院地図Vector）"
         },
@@ -29,7 +29,7 @@
             "minzoom": 6,
             "maxzoom": 6,
             "tiles": [
-                "http://localhost:8000/tile/{z}/{x}/{y}.pbf"
+                "https://mghs15.github.io/tile-dist-from-pmtiles/tile/{z}/{x}/{y}.pbf"
             ],
             "attribution": "地理院タイル目録（地理院地図Vector）"
         }
