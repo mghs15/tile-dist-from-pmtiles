@@ -22,11 +22,14 @@ const tileStat = (directory, header) => {
   directory.forEach( entry => {
   
     if(entry.runLength > 0){
-    
-      const length = entry.length;
-      const xyz = pmtiles.tileIdToZxy(entry.tileId)
       
-      csv += `${xyz[0]},${xyz[1]},${xyz[2]},${length}` + "\n";
+      for( let i=0; i < entry.runLength; i++){
+        const length = entry.length;
+        const xyz = pmtiles.tileIdToZxy(entry.tileId + i)
+        csv += `${xyz[0]},${xyz[1]},${xyz[2]},${length}` + "\n";
+        
+        if(entry.runLength > 1 && i < 1) console.log(`RUNLENGTH-Check,${xyz[0]},${xyz[1]},${xyz[2]},${length},${entry.runLength}` );
+      }
       
     }else{
       

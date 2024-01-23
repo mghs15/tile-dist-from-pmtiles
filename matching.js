@@ -13,7 +13,7 @@ optbv.split("\n").forEach( line => {
   
   const xyz = `${csv[0]},${csv[1]},${csv[2]}`;
   if(!tmp[xyz]){
-    tmp[xyz] = {"optbv":0,"gsibv":0};
+    tmp[xyz] = {"optbv":"","gsibv":""};
   }
   tmp[xyz].optbv = csv[3];
 });
@@ -25,7 +25,7 @@ gsibv.split("\n").forEach( line => {
   
   const xyz = `${csv[0]},${csv[1]},${csv[2]}`;
   if(!tmp[xyz]){
-    tmp[xyz] = {"optbv":0,"gsibv":0};
+    tmp[xyz] = {"optbv":"","gsibv":""};
   }
   tmp[xyz].gsibv = csv[3];
 });
