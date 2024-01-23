@@ -8,6 +8,7 @@ PMTiles からタイルの統計データ（データの分布）を取得する
 blog：[PMTiles からタイル一覧とサイズを取得する（国土地理院最適化ベクトルタイルを例に）](https://qiita.com/mg_kudo/items/9f87fca0c579fd2b645d)
 
 ## R での解析例
+各 ZL 毎にタイルのサイズ分布を示すヒストグラムを作成します。
 ```
 df <- read.csv("stat.csv")
 head(df)
